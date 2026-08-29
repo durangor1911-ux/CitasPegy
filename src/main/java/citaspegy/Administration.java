@@ -17,6 +17,7 @@ public class Administration extends Person{
     public Administration(int id, String docType, String name, String lastName, String phone, String email, String password, Date birthDate, String role) {
         super(id, docType, name, lastName, phone, email, password, birthDate);
         this.role = role;
+
     }
 
     public String getRole() {

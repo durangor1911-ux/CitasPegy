@@ -1,9 +1,10 @@
 package citaspegy;
 
+import java.util.Date;
 public class Appointment {
     private int appointmentId;
 
-    private date Date;
+    private Date Date;
 
     private String starTime;
 
@@ -14,16 +15,15 @@ public class Appointment {
     public Appointment(int appointmentId) {
         this.appointmentId = appointmentId;
     }
-    =
 
-    public Appointment(int appointmentId, date date) {
+    public Appointment(int appointmentId, Date date) {
         this.appointmentId = appointmentId;
         Date = date;
     }
 
-    public Appointment(int appointmentId, date date, String starTime, String status, String bookingCode) {
+    public Appointment(int appointmentId, Date date, String starTime, String status, String bookingCode) {
         this.appointmentId = appointmentId;
-        Date = date;
+        this.Date = date;
         this.starTime = starTime;
         this.status = status;
         this.bookingCode = bookingCode;
@@ -37,11 +37,11 @@ public class Appointment {
         this.appointmentId = appointmentId;
     }
 
-    public date getDate() {
+    public Date getDate() {
         return Date;
     }
 
-    public void setDate(date date) {
+    public void setDate(Date date) {
         Date = date;
     }
 
@@ -78,4 +78,4 @@ public class Appointment {
     public void delete(int id){
     }
 }
-}
+
